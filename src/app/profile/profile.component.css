@@ -1,0 +1,27 @@
+.background{
+    /* background-image: url("shopping.jpg"); */
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.shop{
+    text-align: center;
+    text-shadow: burlywood;
+    color: rgb(192, 58, 58);
+    padding-top: 10%;
+    font-size: 75px;
+    font-style: italic;
+    font-family: sans-serif;
+}   
+.login{
+    padding: 2%;
+    text-align: center;
+    margin-top: 8%;
+    width: 100%;
+    border: 1px solid;
+}
+.tags{
+    width: 100%;
+    margin-top: 2%;
+}
