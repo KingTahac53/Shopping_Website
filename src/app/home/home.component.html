@@ -1,7 +1,140 @@
-<div class="container">
+<div class="row">
+  <img src="https://image.freepik.com/free-vector/online-shopping-concept-digital-marketing-website-mobile-application_43880-332.jpg"  class="img-fluid" alt="online shopping display image" style="width: 100%;">
+</div>
+<div class="row">
+  <div class="container text-center pt-5">
+    <h2>Our Best Sellers</h2>
+    <p><i> ipsum dolor sit amet consectetur adipisicing elit. Saepe, dicta. Nostrum voluptatem ratione corporis modi! Nostrum sequi a consequatur delectus, cum quibusdam adipisci aut quia! Beatae iste excepturi vero numquam.</i></p>
+  </div>
+</div>
+<div class="row">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-4 pt-5" *ngFor="let card of cardContent">
-        <app-card [imageSource]="card.imageSource" [title]="card.title" [content]="card.content"></app-card>
+      <div class="col-md-3 py-5" *ngFor="let card of cardContent.slice(0,8)">
+          <app-card [imageSource]="card.imageSource" [title]="card.title" [content]="card.content" [cost]="card.cost"></app-card>
       </div>
     </div>
   </div>
+</div>
+<div class="container text-center pb-5">
+  <button class="btn btn-primary px-4">View All</button>
+</div>
+<div class="container my-5">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[0].imageSource" style="width: 100%;">
+            <div class="p-3">
+                <p class="pt-2" style="font-size: 24px;">{{cardContent[0].title}}</p>
+                <p>
+                    <b>Cost: {{cardContent[0].cost}}</b>
+                </p>
+            </div>
+          </div>
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[1].imageSource" style="width: 100%;">
+            <div class="shadow p-3">
+              <p class="pt-2" style="font-size: 24px;">{{cardContent[1].title}}</p>
+              <p>
+                <b>Cost: {{cardContent[1].cost}}</b>
+              </p>
+            </div>
+          </div>
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[2].imageSource" style="width: 100%;">
+            <div class="p-3">
+              <p class="pt-2" style="font-size: 24px;">{{cardContent[2].title}}</p>
+              <p>
+                  <b>Cost: {{cardContent[2].cost}}</b>
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[3].imageSource" style="width: 100%;">
+            <div class="p-3">
+                <p class="pt-2" style="font-size: 24px;">{{cardContent[3].title}}</p>
+                <p>
+                    <b>Cost: {{cardContent[3].cost}}</b>
+                </p>
+            </div>
+          </div>
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[4].imageSource" style="width: 100%;">
+            <div class="shadow p-3">
+              <p class="pt-2" style="font-size: 24px;">{{cardContent[4].title}}</p>
+              <p>
+                <b>Cost: {{cardContent[4].cost}}</b>
+              </p>
+            </div>
+          </div>
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[5].imageSource" style="width: 100%;">
+            <div class="p-3">
+              <p class="pt-2" style="font-size: 24px;">{{cardContent[5].title}}</p>
+              <p>
+                  <b>Cost: {{cardContent[5].cost}}</b>
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[5].imageSource" style="width: 100%;">
+            <div class="p-3">
+                <p class="pt-2" style="font-size: 24px;">{{cardContent[6].title}}</p>
+                <p>
+                    <b>Cost: {{cardContent[6].cost}}</b>
+                </p>
+            </div>
+          </div>
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[7].imageSource" style="width: 100%;">
+            <div class="shadow p-3">
+              <p class="pt-2" style="font-size: 24px;">{{cardContent[7].title}}</p>
+              <p>
+                <b>Cost: {{cardContent[7].cost}}</b>
+              </p>
+            </div>
+          </div>
+          <div class="col m-3 p-0 shadow">
+            <img [src]="cardContent[8].imageSource" style="width: 100%;">
+            <div class="p-3">
+              <p class="pt-2" style="font-size: 24px;">{{cardContent[8].title}}</p>
+              <p>
+                  <b>Cost: {{cardContent[8].cost}}</b>
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Prev</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+

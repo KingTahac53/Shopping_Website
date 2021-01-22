@@ -24,8 +24,9 @@ export class HomeComponent implements OnInit {
             content: catalogI.description,
             title: catalogI.title,
             imageSource: 'https://www.autonise.com' + catalogI.icon,
+            cost: catalogI.cost
           }
-        );
+        );        
       }
     });
   }
