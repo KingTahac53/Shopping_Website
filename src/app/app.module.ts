@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CardComponent } from './card/card.component';
     ProfileComponent,
     LoginComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
